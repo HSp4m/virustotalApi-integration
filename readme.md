@@ -1,3 +1,3 @@
 # virustotalApi-integration
 
-A project thats use VirusTotalApi for url and hash scans using NextJs
+A project that uses VirusTotalApi for URL and hash scans using NextJs
