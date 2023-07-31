@@ -1,7 +1,7 @@
 {
-  "name": "genericjavascriptproject",
+  "name": "virustotalapi-integration",
   "version": "1.0.0",
-  "description": "First api and first time using NEXTJS",
+  "description": "A project thats use VirusTotalApi for url and hash scans using NextJs",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
