@@ -1,0 +1,17 @@
+{
+  "name": "genericjavascriptproject",
+  "version": "1.0.0",
+  "description": "First api and first time using NEXTJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
