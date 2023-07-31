@@ -1,3 +1,3 @@
 # First api
 
-A generic api project
+First api and first time using NEXTJS
