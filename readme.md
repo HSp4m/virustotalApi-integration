@@ -1,3 +1,3 @@
-# Generic Javascript Project
+# First api
 
-a generic javascript project
+A generic api project
