@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default function main(request,response) {
-    const url = request.query.url.replace("/", "%2");
+    const url = request.query.url.replace("/", "%2F");
 
     const apiSecret = process.env.VT_API_KEY
     const urlBase64 = btoa(request.query.url).replace("==", "");
