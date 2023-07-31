@@ -1,3 +1,3 @@
-# First api
+# virustotalApi-integration
 
-First api and first time using NEXTJS
+A project thats use VirusTotalApi for url and hash scans using NextJs
