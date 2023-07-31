@@ -1,7 +1,7 @@
 import axios from 'axios';
 
+
 export default function main(request,response) {
-    const url = request.query.url.replace("/", "%2");
 
     const apiSecret = process.env.VT_API_KEY
     const urlBase64 = btoa(request.query.url).replace("==", "");
@@ -16,6 +16,7 @@ export default function main(request,response) {
       };
   
     const dynamicData = new Date();
+  
     axios
   .request(options)
   .then(function (rpsn) {
@@ -23,13 +24,20 @@ export default function main(request,response) {
       
       
     
-     
-
-    response.json({
-        date: dynamicData.toGMTString(),
+    
+    if(Array.isArray(rpsn.data.data.attributes.threat_names) && rpsn.data.data.attributes.threat_names.length > 0) {
+      
+      response.json({
         type: rpsn.data.data.attributes.threat_names
 
     })
+    } else {
+      response.json({
+        noMalware: "No bad result found"
+      })
+    }
+
+    
   }
 })
   .catch(function (error) {

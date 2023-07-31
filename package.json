@@ -1,6 +1,6 @@
 {
   "name": "virustotalapi-integration",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "A project thats use VirusTotalApi for url and hash scans using NextJs",
   "main": "index.js",
   "scripts": {
